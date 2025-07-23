@@ -141,9 +141,15 @@ const HomePage: React.FC = () => {
         </div>
       </section>
       
-      <main className="container mx-auto px-4 py-12 space-y-8">
-        <BinInput onCheckBins={checkBins} isLoading={isLoading} />
-        <BinResultTable results={results} isLoading={isLoading} />
+      <main className="container mx-auto px-4 py-12 flex justify-center">
+        <div className="w-full max-w-4xl bg-white/10 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-0 overflow-hidden">
+          <div className="p-8 pb-4">
+            <BinInput onCheckBins={checkBins} isLoading={isLoading} />
+          </div>
+          <div className="px-8 pt-0 pb-8">
+            <BinResultTable results={results} isLoading={isLoading} />
+          </div>
+        </div>
       </main>
       
       <Footer />

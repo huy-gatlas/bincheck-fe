@@ -70,7 +70,7 @@ const BinInput: React.FC<BinInputProps> = ({ onCheckBins, isLoading = false }) =
   };
 
   return (
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 max-w-4xl mx-auto">
+    <div>
       <div className="text-center mb-6">
         <h2 className="text-2xl font-bold text-white mb-2">
           Check Multiple BIN Numbers
@@ -89,7 +89,7 @@ const BinInput: React.FC<BinInputProps> = ({ onCheckBins, isLoading = false }) =
             id="binInput"
             value={binInput}
             onChange={handleInputChange}
-            placeholder="Enter BIN numbers (e.g., 411111555555400000)"
+            placeholder="Enter BIN numbers (e.g., 411111, 555555, 400000, etc.)"
             className="w-full h-32 px-4 py-3 bg-white/10 border border-white/20 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent resize-none text-lg font-mono text-white placeholder-white/50 backdrop-blur-sm"
             disabled={isLoading}
           />

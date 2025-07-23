@@ -70,7 +70,7 @@ const BinResultTable: React.FC<BinResultTableProps> = ({ results, isLoading }) =
   };
 
   return (
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 max-w-6xl mx-auto">
+    <div>
       <div className="mb-6">
         <h3 className="text-xl font-bold text-white mb-2">
           BIN Check Results
